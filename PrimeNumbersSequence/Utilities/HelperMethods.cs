@@ -12,6 +12,7 @@ namespace PrimeNumbersSequence.Utilities
 
             try
             {
+                // Check if input is empty and contains dash (symbol of negative numbers)
                 return Convert.ToUInt64(userInput == "" ? "0" : userInput.Contains("-") ? "0" : userInput);
             }
             catch (FormatException exception)  // If digit is not typed
@@ -60,7 +61,7 @@ namespace PrimeNumbersSequence.Utilities
             {
                 Console.ReadKey();
             }
-            Console.WriteLine(new string('-', 50));
+            Console.WriteLine(new string('-', 78));
         }
     }
 }

@@ -29,7 +29,15 @@ namespace PrimeNumbersSequence
             HelperMethods.AskIfContinue();
             if (Run)
             {
-                PrimaryNumbers.GenerateSequence(Number);
+                PrimaryNumbers.GenerateSequence1(Number);
+            }
+
+            HelperMethods.Separator();
+            Console.WriteLine(DisplaySieveOfEratosthenes);
+            HelperMethods.AskIfContinue();
+            if (Run)
+            {
+                PrimaryNumbers.GenerateSequence2(Number);
             }
 
             // ----------------------------------------------------------------
